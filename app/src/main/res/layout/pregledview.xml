@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativPregled"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="1"
+    android:background="@drawable/custom_border">
+
+    <ImageView
+        android:id="@+id/pregledID"
+        android:layout_width="207dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bank" />
+
+    <TextView
+        android:id="@+id/IdPregled"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/rezervisiID"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toEndOf="@+id/pregledID"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/radnoVremeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IdPregled"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/buttonLocation"
+        android:gravity="center"
+        android:padding="4dp" />
+
+    <Button
+        android:id="@+id/rezervisiID"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toEndOf="@+id/pregledID"
+        android:background="@drawable/custom_button"
+        android:text="Rezervisi"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/rezervisiID"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/pregledID"
+        android:background="@drawable/custom_location_button"
+        android:drawableTop="@drawable/ic_location_on_black_24dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:paddingTop="3dp"
+        android:paddingBottom="4dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F1E6E6"
+        android:textColorLink="#EAE1E1" />
+
+</RelativeLayout>

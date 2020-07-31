@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/program"
+        android:title="@string/menu_program"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"/>
+    <item
+        android:id="@+id/promo"
+        android:title="@string/menu_promo"
+        android:icon="@drawable/ic_local_offer_black_24dp"/>
+    <item
+        android:id="@+id/check_in"
+        android:title="@string/menu_check_in"
+        android:icon="@drawable/ic_location_on_black_24dp"/>
+    <item
+        android:id="@+id/profil"
+        android:title="@string/menu_profil"
+        android:icon="@drawable/ic_perm_identity_black_24dp"/>
+</menu>

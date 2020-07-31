@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/daniUNedelji"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/daniUnedeljiLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/daniuNdelejiTabovi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                app:tabInlineLabel="false"
+                app:tabMinWidth="100dp"
+                app:tabTextColor="#FFFFFF">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ponedeljak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ponedeljak" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/utorak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="utorak" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/sreda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sreda" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/cetvrtak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cetvrtak" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/petak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="petak" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/subota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="subota" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/nedelja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nedelja" />
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daniUNedelji" />
+
+   <!-- <ScrollView
+        android:id="@+id/mainScrolView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daniUNedelji">
+
+        <LinearLayout
+            android:id="@+id/MainLinearScrolView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperaturaID"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:paddingRight="20dp"
+        android:text="aaaaa"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/daniUNedelji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
